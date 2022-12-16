@@ -1,0 +1,184 @@
+.homeBackground {
+    background-image: url("../../assets/images/1260061.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gotLogoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 12em;
+    height: 500px;
+}
+
+.gotLogoDesktop {
+    display: block;
+}
+
+.gotLogoMobile {
+    display: none;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.optionBackground {
+    background-image: url("../../assets/images/wallpaperflare.com_wallpaper.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: #f1f1f1;
+    letter-spacing: 2px;
+    font-size: 60px;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+}
+
+.optionBoxesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4em;
+    flex-wrap: wrap;
+}
+.optionBox {
+    display: flex;
+    justify-content: center;
+    min-height: 600px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 1000px;
+    overflow: hidden;
+    flex:40%;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.optionBoxImage {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    min-width: 600px;
+    transition: transform 0.5s;
+    display: flex;
+}
+
+
+.optionBoxImage:hover {
+    transform: scale3d(1.08, 1.08, 0.5);
+}
+
+.optionBoxTitle {
+    color: white;
+    letter-spacing: 4px;
+    font-size: 70px;
+    align-self: center;
+    justify-content: center;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8);
+}
+
+.optionBoxTitle:hover {
+    font-size: 100px;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8);
+    transform: scale3d(1.006, 1.006, 1);
+}
+
+.link {
+    cursor: pointer;
+    
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.link span {
+    color: white;
+    font-size: 70px;
+}
+
+
+.link::before,
+.link::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.link::before {
+    content: '';
+    /* show by default */
+}
+
+.linkElara {
+    font-size: 1.375rem;
+}
+
+
+.linkElara::before {
+    transform-origin: 50% 100%;
+    transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+    clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+}
+
+.linkElara:hover::before {
+    transform: translate3d(0, 2px, 0) scale3d(1.08, 3, 1);
+    clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
+}
+
+.linkElara span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+}
+
+
+
+.linkElara:hover span {
+    transform: translate3d(0, -2px, 0);
+}
+
+@media screen and (min-width: 481px) {
+    .gotLogoDesktop {
+        display: block;
+    }
+}
+@media screen and (max-width: 800px) {
+    .gotLogoMobile {
+        display: block;
+    }
+    .gotLogoDesktop {
+        display: none;
+    }
+}

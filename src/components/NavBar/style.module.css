@@ -1,0 +1,16 @@
+.randomHouseLogoContainer {
+    display:flex;
+    flex-direction: row;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+.randomHouseLogo {
+    height:60px;
+    
+}
+
+.header {
+    position:absolute;
+    top:0;
+    background-color: transparent !important;
+}
