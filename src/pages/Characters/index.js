@@ -3,7 +3,7 @@ import listCharactersGOT from '../../services/api';
 import styles from './style.module.css';
 import daenerysTargaryen from '../../assets/images/daenerys.png'
 import CharacterList from "../../components/CharacterList";
-import fetchData from "../../services/miapi";
+import getCharactersFromMongo from "../../services/miapi";
 
 
 const Characters = () => {
@@ -14,7 +14,7 @@ const Characters = () => {
         let daenerys = importantCharactersTemp.find((character) => character.name == 'Daenerys Targaryen' )
         console.log('daenerys bro', daenerys)
         setSelectedCharacter(daenerys)
-        const dataFromMongo = await fetchData()
+        const dataFromMongo = await getCharactersFromMongo()
         console.log('dataFromMongo', dataFromMongo)
     }, []);
 

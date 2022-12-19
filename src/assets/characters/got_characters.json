@@ -19,5 +19,90 @@
 		"house": "House Targaryen",
 		"descriptionShort": "Prince Viserys Targaryen is the heir of his father, King Aerys II Targaryen, following the death of his older brother, Prince Rhaegar, during Robert's Rebellion. The war turned Viserys and his younger sister, Daenerys, Princess of Dragonstone, into exiles from the Seven Kingdoms who can only plot to regain control of the Iron Throne.",
 		"description": "He styles himself as \"Viserys of the House Targaryen, the Third of his Name, King of the Andals, the Rhoynar, and the First Men, Lord of the Seven Kingdoms and Protector of the Realm\", as he had been declared king on Dragonstone after his father's death. In the Free Cities Viserys was mockingly dubbed the \"Beggar King\", a name which spread towards the Seven Kingdoms."
+	},
+	{
+		"name": "Arya Stark",
+		"titles": "Arya Horseface",
+		"house": "House Stark",
+		"descriptionShort": "Arya Stark is the third child and second daughter of Lord Eddard Stark and Lady Catelyn Tully. A member of House Stark, she has five siblings: brothers Robb, Bran, Rickon, half-brother Jon Snow, and older sister Sansa.",
+		"description": "Arya's appearance is more Stark than Tully, with a long face,grey eyes, and brown hair. She is skinny and athletic. She is bullied over her looks by her sister and the other girls at Winterfell who call her \"Arya Horseface\". She is interested in fighting and exploration, unlike her older sister, Sansa. Arya wants to learn how to fight with a sword, to the horror of Sansa, who enjoys the more traditional pursuits of a noblewoman. Arya is particularly close to her half brother, Jon Snow, who encourages her martial pursuits. She is said to take after the fiery Lyanna in temperament."
+	},
+	{
+		"name": "Robb Stark",
+		"titles": "The Young Wolf",
+		"house": "House Stark",
+		"descriptionShort": "Robb Stark is the eldest son of Eddard Stark and Catelyn Tully and is the heir of House Stark to Winterfell and the north. He is called the Young Wolf by friend and foe alike.",
+		"description": "Robb's appearance favors his Tully side, with a stocky build, blue eyes and thick red-brown hair. He is strong and fast. He opens the series as a boy of fourteen years. Robb is his father Eddard's son, with a keen sense of justice and courtesy. He shares his father's devotion to honor and is frequently accompanied by his direwolf, Grey Wind. Robb is a follower of the old gods."
+	},
+	{
+		"name": "Catelyn Stark",
+		"titles": "Lady of Winterfell",
+		"house": "House Tully",
+		"descriptionShort": "Lady Catelyn Stark, is the wife of Eddard Stark, Lord of Winterfell and Warden of the North. Together they have five children: Robb, Sansa, Arya, Bran, and Rickon. Catelyn is known as Cat to close family and friends.",
+		"description": "Catelyn was born into House Tully of Riverrun, the liege lords of the riverlands. She is the eldest daughter of Lord Hoster Tully and Lady Minisa Whent, and has two younger siblings: Lysa and Edmure. Catelyn is beautiful, with fair skin, long auburn hair and blue eyes. Her own sons Robb, Bran and Rickon, and daughter Sansa take after Catelyn in their coloring. Catelyn tries to follow the words of House Tully, \"Family, Duty, Honor.\" She is proud, honorable, and honest, and peaceful. She holds duty over desire as a governing principle of behavior,but she is fiercely protective of her beloved family."
+	},
+	{
+		"name": "Eddard Stark",
+		"titles": "Lord of Winterfell",
+		"house": "House Stark",
+		"descriptionShort": "Eddard Stark, also called \"Ned\", is the head of House Stark, Lord of Winterfell, and Warden of the North. He is a close friend to King Robert I Baratheon, with whom he was raised.",
+		"description": "Eddard has a long face and long brown hair. His closely-trimmed beard is beginning to grey, making him look older than his thirty-five years. His dark grey eyes reflect his moods, turning soft as fog or hard as stone. He is fiercely protective of his wife and children, whom he loves deeply.Eddard is known for his unwavering sense of honor and justice and his family finds him kind, although some consider his reserved personality a sign of coldness and disdain. Among his enemies, he has the reputation of having cold, judgmental eyes thought to reflect his frozen heart."
+	},
+	{
+		"name": "Sansa Stark",
+		"titles": "Little bird",
+		"house": "House Stark",
+		"descriptionShort": "Sansa Stark is a member of House Stark and is the elder daughter of Lady Catelyn and Lord Eddard Stark. She has three brothers: Robb, Bran and Rickon; a younger sister: Arya; and a half-brother: Jon Snow.",
+		"description": "Sansa is traditionally beautiful, taking after her mother's family (House Tully) with her high cheekbones, deep blue eyes, and thick soft auburn hair lighter than her mother's. Raised as a lady, Sansa possesses the traditional feminine graces of her milieu, with a keen interest in music, poetry, singing, dancing, embroidery, and other traditional feminine activities. Like many girls her age, Sansa is enthralled by songs and stories of romance and adventure, particularly those depicting handsome princes, honorable knights, chivalry, and love. She keeps faith with both the old gods and the Seven."
+	},
+	{
+		"name": "Rickon Stark",
+		"titles": "Prince of Winterfell",
+		"house": "House Stark",
+		"descriptionShort": "Rickon Stark is Eddard and Catelyn's youngest child, only three years old when the series begins. Rickon is a naturally aggressive and strong-willed child, but his youth makes it difficult for him to cope with the terrible changes that come to his family and life. He is usually accompanied by his direwolf, Shaggydog.",
+		"description": "Rickon favors his mother Catelyn in appearance, having the bright blue eyes, auburn hair, and easy smile of a Tully. Young Rickon is playful but temperamental and stubborn.He has a breathless laughter and fiercely tries to be like his older brothers. Rickon's family often thinks of him as a baby. Rickon wears an ermine mantle. His bedchamber is half a turn below Bran's in a tower at Winterfell."
+	},
+	{
+		"name": "Tyrion Lannister",
+		"titles": "The Imp",
+		"house": "House Lannister",
+		"descriptionShort": "Tyrion Lannister is a member of House Lannister and is the third and youngest child of Lord Tywin Lannister and the late Lady Joanna Lannister. His older siblings are Cersei Lannister, the queen of King Robert I Baratheon, and Ser Jaime Lannister, a knight of Robert's Kingsguard.Tyrion is a dwarf; because of this he is sometimes called the Imp and the Halfman.",
+		"description": "Tyrion is a dwarf with stunted legs, stubby fingers, and a jutting forehead. He is intelligent, well educated, and a ferocious reader. Even though he is no warrior, he has been trained at arms and shows great bravery in battle. Tyrion has stated that what he lacks in size and strength he makes up for in mental acuity.Tyrion generally receives little respect and is often mocked. His deformity is the cause of many problems and persecution, although mitigated to some extent by his high social standing and his family's wealth and power. He craves for love and respect from his family, but does not have a good relationship with all his family members."
+	},
+	{
+		"name": "Cersei Lannister",
+		"titles": "The Queen",
+		"house": "House Lannister",
+		"descriptionShort": "Queen Cersei Lannister is the only daughter and eldest child of Lord Tywin Lannister of Casterly Rock and his wife, Lady Joanna Lannister. She is the twin of her younger brother, Ser Jaime Lannister. After Robert's Rebellion, Cersei married King Robert I Baratheon and became Queen of the Seven Kingdoms. She is the mother of Prince Joffrey, Princess Myrcella, and Prince Tommen of House Baratheon of King's Landing.",
+		"description": "Cersei is a strikingly beautiful woman, with golden hair, emerald green eyes, fair skin,and a slender, graceful figure. Cersei is willful, ambitious and has a certain low cunning. She is hungry and greedy for power. Cersei believes herself to be subtle and politically astute. She hates being excluded from power on account of her gender, and resents the customs and conventions put on her because she is female. She thinks of herself as a female version of her father,and feels slighted when people do not obey her commands as they would have done for Lord Tywin, but instead give her their counsel, or disagree with her, which she faults on her gender. Her quick temper and her easily wounded pride frequently lead her to make rash decisions, and she rarely considers what unintended consequences her actions might have."
+	},
+	{
+		"name": "Jaime Lannister",
+		"titles": "Kingslayer",
+		"house": "House Lannister",
+		"descriptionShort": "Ser Jaime Lannister, also known as the Kingslayer, is a knight from House Lannister. He is the second child and first-born son of Lord Tywin Lannister of Casterly Rock and his wife, Lady Joanna, also of House Lannister. He is the twin brother of Queen Cersei Lannister.Raised at the age of fifteen to the Kingsguard of the Mad King, Aerys II Targaryen, Jaime became the youngest member in the history of the prestigious knightly order. He earned the derogatory nickname \"Kingslayer\" when he treasonously slew Aerys near the end of Robert's Rebellion.",
+		"description": "As a Kingsguard knight, Jaime wears white armor and a white cloak. On occasion he wears golden armor decorated with the Lannister lion, with gilded longsword and ornate lion's helmet. Jaime alternatively wears a crimson silk tunic embroidered with a golden lion, along with black boots and a black cloak. Jaime is a born warrior, with little interest in politics and court intrigue. He takes few things seriously. By his own admission, Jaime only feels truly alive when fighting or making love. He comes across as arrogant, amoral, and dishonorable. Because of the death of King Aerys, Jaime has earned such a bad reputation that everything he says is usually cast in the worst possible light."
+	},
+	{
+		"name": "Tywin Lannister",
+		"titles": "Lord of Casterly Rock",
+		"house": "House Lannister",
+		"descriptionShort": "Tywin Lannister is Lord of Casterly Rock, Shield of Lannisport, and Warden of the West. The head of House Lannister, Tywin is one of the most powerful lords in Westeros, and he is the father of Queen Cersei, Ser Jaime of the Kingsguard, and Tyrion.",
+		"description": "Tywin is a tall, slender, broad-shouldered man in his fifties. His arms are thin but muscled. Tywin is a calculating, intelligent, politically astute, ruthless, and controlling man. He dedicates his life and efforts towards maintaining the Lannisters' prestige, and ensuring House Lannister is respected, or at least feared.Tywin is a proven battle commander who leads from the rear, and he has a powerful presence combined with an intimidating gaze. He is harsh with betrayal. According to his sister Genna, Tywin mistrusts laughter because of how his father, Lord Tytos, had been laughed at;Grand Maester Pycelle was amazed that his late wife Joanna was able to make him laugh three different times. Though ruthless, Tywin Lannister is an able and shrewd ruler who brought great prosperity during his tenure as the King's Hand." 
+	},
+	{
+		"name": "Robert Baratheon",
+		"titles": "Lord of the Seven Kingdoms",
+		"house": "House Baratheon",
+		"descriptionShort": "Robert I Baratheon is the King of the Andals, the Rhoynar, and the First Men, Lord of the Seven Kingdoms and Protector of the Realm of Westeros, and the head of House Baratheon of King's Landing. Robert was crowned king after King Aerys II Targaryen, his first cousin once removed, was killed during Robert's Rebellion. Following the war, Robert married Cersei Lannister to ensure political stability. With her, Robert has three children: Joffrey, Myrcella, and Tommen.",
+		"description": "Robert has the classic Baratheon look: black hair and bright blue eyes. As a young adult, Robert was a handsome, clean-shaven man, with rough and hard hands.He was strong and powerful, and muscled \"like a maiden's fantasy.\" In 289 AC, after putting down Greyjoy's Rebellion, Robert's appearance began to change. Due to excessive feasting and drinking, Robert gained a significant amount of weight. In the nine years since, he gained at least eight stone. Now, he is often red-faced from drink, with dark circles underneath his eyes, and walks as if he is half in his cups, while sweating through his silks. Robert's beard, a wild, thick and fierce thing,hides his double chin. As king, Robert is no longer used to someone disagreeing with him, and he can be manipulated by others if advised not to do something. Cersei Lannister considers her husband to be an ignorant,dumb, slow-witted,drunken brute of a man, who does not have the ruthless streak she believes a king requires."
+	},
+	{
+		"name": "Joffrey Baratheon",
+		"titles": "Lord of the Seven Kingdoms",
+		"house": "House Baratheon",
+		"descriptionShort": "Prince Joffrey Baratheon is known to the Seven Kingdoms as the eldest son and heir of King Robert I Baratheon and Queen Cersei Lannister. A member of House Baratheon of King's Landing, his siblings are Princess Myrcella and Prince Tommen.",
+		"description": "Joffrey has the Lannister look and is tall for a boy his age, with blond curly hair.Known to be handsome, he has deep green eyes and pouty lips. Although he can be gallant and courteous, he has an uncontrollable temper not unlike his mother, Queen Cersei Lannister, and an unchecked sadistic streak. He has little sense of right or wrong, which often leads him to trouble, especially when he loses his temper. When things go wrong, Joffrey blames the problems on others. Despite being willful he is reckless, vicious, cruel and not particularly intelligent, all of which combine to make him prone to irrational and bad judgements."
 	}
+
 ]
