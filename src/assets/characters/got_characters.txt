@@ -1,0 +1,24 @@
+[{
+	"name":"Jon Snow",
+	"titles": "Lord Commander of the Night's Watch",
+	"house":"House Stark",
+	"descriptionShort":"Jon Snow is the bastard son of Eddard Stark, Lord of Winterfell. He has five half-siblings: Robb, Sansa, Arya, Bran, and Rickon Stark. Unaware of the identity of his mother, Jon was raised at Winterfell. At the age of fourteen, he joins the Night's Watch, where he earns the nickname Lord Snow.",
+	"description":"Jon has more Stark-like features than any of his half-brothers. He is graceful and quick, and has a lean build. Jon has the long face of the Starks, with dark, brown hair and grey eyes so dark they almost seem black. Jon resembles his father, Lord Eddard Stark. Because he looks so much like a Stark, Tyrion Lannister notes that whoever Jon's mother was, she left little of herself in her son's appearance. Out of all the Stark children, Arya Stark is said to resemble Jon the most, as Robb, Sansa, Bran and Rickon take after their Tully mother, Catelyn."
+	
+},
+
+{ "name":"Daenerys Targaryen",
+	"titles": "Mother of Dragons",
+	"house":"House Targaryen",
+	"descriptionShort":"Princess Daenerys Targaryen, also known as Daenerys Stormborn, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, who refers to her as Dany. She is the youngest child of King Aerys II Targaryen and his sister-wife, Queen Rhaella.",
+	"description":"As she was raised in exile, never staying long as one place, Daenerys has never truly known a place to call home. Though she describes the fragrance of the Western Market at Vaes Dothrak with smelling "of home", they in fact remind of her her days spent in several of the Free Cities as a small child. Among the Dothraki, she feels safe, loved and hopeful for the first time. The house with the red door in Braavos, where she lived until she was about five years old, has come to symbolize her lost childhood, and she frequently wishes to return there. Though she has never seen Westeros and cannot remember Dragonstone, she believes that the Iron Throne is her by rights, as Viserys's heir, and that ruling the Seven Kingdoms is her duty. Daenerys abhors slavery and is willing to put the needs of her people before her own desires."
+},
+{ "name":"Viserys Targaryen",
+	"titles": "Beggar King",
+	"house":"House Targaryen",
+	"descriptionShort":"Prince Viserys Targaryen is the heir of his father, King Aerys II Targaryen, following the death of his older brother, Prince Rhaegar, during Robert's Rebellion. The war turned Viserys and his younger sister, Daenerys, Princess of Dragonstone, into exiles from the Seven Kingdoms who can only plot to regain control of the Iron Throne.",
+	"description":"He styles himself as "Viserys of the House Targaryen, the Third of his Name, King of the Andals, the Rhoynar, and the First Men, Lord of the Seven Kingdoms and Protector of the Realm", as he had been declared king on Dragonstone after his father's death. In the Free Cities Viserys was mockingly dubbed the "Beggar King", a name which spread towards the Seven Kingdoms."
+}
+
+]	
+

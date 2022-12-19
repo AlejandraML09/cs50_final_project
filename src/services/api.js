@@ -1,7 +1,11 @@
+import daenerysTargaryen from '../assets/images/daenerys.png'
+
 const API_URL = 'https://www.anapioficeandfire.com/api'
 
+
+
 const importantCharactersIds = [
-    { name: 'Daenerys Targaryen', id: 271 },
+    { name: 'Daenerys Targaryen', id: 271, image: daenerysTargaryen},
     { name: 'Viserys Targaryen', id: 1079 },
     { name: 'Jon Snow', id: 583 },
     { name: 'Arya Stark', id: 148 },
@@ -16,9 +20,6 @@ const importantCharactersIds = [
     { name: 'Jaime Lannister', id: 529 },
     { name: 'Tywin Lannister', id: 27 },
     { name: 'Joffrey Baratheon', id: 565 },
-
-
-
 
 ]
 

@@ -34,7 +34,7 @@ const HomePage = () => {
                     <h1 className={styles.title}>When you play the game of thrones, you win or you die. </h1>
                     <h1 className={styles.title}>Who will sit on the Iron Throne in the end? </h1>
                     <div className={styles.optionBoxesContainer}>
-                        <OptionBox image={eddardStark} text='Characters' />
+                        <OptionBox image={eddardStark} text='Characters' link='/characters' />
                         <OptionBox image={westerosMap} text='Westeros'  />
                     </div>
                 </div>

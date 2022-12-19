@@ -1,0 +1,12 @@
+[{
+	"name":"Jon Snow",
+	"titles": "Lord Commander of the Night's Watch",
+	"house":"House Stark",
+	"descriptionShort":"Jon Snow is the bastard son of Eddard Stark, Lord of Winterfell. He has five half-siblings: Robb, Sansa, Arya, Bran, and Rickon Stark. Unaware of the identity of his mother, Jon was raised at Winterfell. At the age of fourteen, he joins the Night's Watch, where he earns the nickname Lord Snow.",
+	"description":"Jon has more Stark-like features than any of his half-brothers. He is graceful and quick, and has a lean build. Jon has the long face of the Starks, with dark, brown hair and grey eyes so dark they almost seem black. Jon resembles his father, Lord Eddard Stark. Because he looks so much like a Stark, Tyrion Lannister notes that whoever Jon's mother was, she left little of herself in her son's appearance. Out of all the Stark children, Arya Stark is said to resemble Jon the most, as Robb, Sansa, Bran and Rickon take after their Tully mother, Catelyn."
+	
+},
+
+{ "name":"Pepita"}
+]	
+

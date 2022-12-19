@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import listCharactersGOT from '../../services/api'
-
-const CharacterList = () => {
+import styles from './style.module.css';
+const CharacterList = ({setSelectedCharacter}) => {
 
     useEffect(async () => {
         setImportantCharacterList(await listCharactersGOT())
@@ -9,13 +9,17 @@ const CharacterList = () => {
 
         const [importantCharacterList, setImportantCharacterList] = useState([])
 
+        function selectCharacter(character) {
+            setSelectedCharacter(character)
+            console.log('hola hiciste click en', character.name)
+        }
+
     return (
         <div>
             {importantCharacterList.map((character) => {
                 return (
                     <div>
-                        {/* <div>{JSON.stringify(character)}</div> */}
-                        <div>name : {(character.name)}</div>
+                        <button onClick={ () => selectCharacter(character)} className={styles.characterList}>{(character.name)}</button>
                     </div>
                 )
             })}
