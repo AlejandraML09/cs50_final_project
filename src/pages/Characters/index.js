@@ -11,7 +11,7 @@ const Characters = () => {
         let importantCharactersTemp = await listCharactersGOT()
         console.log('aaaa', importantCharactersTemp)
         setImportantCharacterList(importantCharactersTemp)
-        let daenerys = importantCharactersTemp.find((character) => character.name == 'Daenerys Targaryen' )
+        let daenerys = importantCharactersTemp.find((character) => character.name == 'Daenerys Targaryen')
         console.log('daenerys bro', daenerys)
         setSelectedCharacter(daenerys)
         const dataFromMongo = await getCharactersFromMongo()
@@ -21,7 +21,7 @@ const Characters = () => {
     const [importantCharacterList, setImportantCharacterList] = useState([])
 
 
-    const [selectedCharacter, setSelectedCharacter] = useState({ name: 'Daenerys Targaryen', image: daenerysTargaryen })
+    const [selectedCharacter, setSelectedCharacter] = useState({})
 
     return (
         <div className={styles.charactersPageContainer}>
@@ -29,9 +29,15 @@ const Characters = () => {
                 <CharacterList setSelectedCharacter={setSelectedCharacter} />
             </div>
             <div className={styles.charactersInfoContainer}>
-                <h1 className={styles.characterName}>{selectedCharacter.name}</h1>
-                <img className={styles.characterImage} src={selectedCharacter.image} alt="Daenerys Targaryen" />
+                <div className={styles.characterDescriptionContainer}>
+                    <h1 className={styles.characterName}>{selectedCharacter.name}</h1>
+                    <h2 className={styles.characterTitle}>{selectedCharacter.titles}</h2>
+                    <p className={styles.characterDescription}>{selectedCharacter.description}</p>
+                    <p className={styles.characterDescription}>{selectedCharacter.descriptionShort}</p>
+                </div>
+                <img className={styles.characterImage} src={selectedCharacter.image} alt={selectedCharacter.name} />
             </div>
+
         </div>
 
     )

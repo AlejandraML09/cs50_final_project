@@ -1,3 +1,26 @@
-.characterList {
-    padding:30px;
+.buttonContainer {
+    position: relative;
+}
+
+.characterButton {
+    padding: 30px;
+    background-color: transparent;
+    width: 100%;
+    color: white;
+    border-color: white;
+    border: 0px;
+    border-bottom: 3px solid;
+    position: relative;
+}
+
+.characterListVerticalScroll {
+    overflow-y: scroll;
+}
+.houseImage {
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.5;
+    right:0;
+    bottom: 0;
 }

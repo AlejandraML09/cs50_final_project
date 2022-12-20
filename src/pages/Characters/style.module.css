@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
-h1,p {
-    font-family: 'Montserrat', sans-serif;
+h1,
+p {
+    font-family: "Montserrat", sans-serif;
 }
 
 .charactersPageContainer {
@@ -14,49 +15,83 @@ h1,p {
 }
 
 .charactersPageContainer::before {
-    content: '';
-    top: 0; 
+    content: "";
+    top: 0;
     left: 0;
-    width: 100%; 
-    height: 100%;    
+    width: 100%;
+    height: 100%;
     background-image: url("../../assets/images/targaryen_background.jpg");
     filter: brightness(30%);
     position: absolute;
 }
 
-
 .charactersListContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
     z-index: 1;
+    max-height: 100vh;
+    margin-top: 70px;
+    overflow: hidden;
+
+
 }
 
 .charactersInfoContainer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 100px;
+    flex-direction:;
+    justify-content: space-around;
+
+    
+
 }
 
+.characterDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 80px;
+    position:relative;
+}
+
+.characterDescription {
+    color: white;
+    font-size: larger;
+    float: right;
+    padding: 0 0 20px 20px;
+    inline-size: 600px; 
+
+}
 
 .characterName {
     color: white;
     font-size: 80px;
     text-transform: uppercase;
-    position:relative;
-    bottom:-40px;
-    z-index:2;
+    position: relative;
+    margin-top: 80px;
+    z-index: 2;
+    margin-bottom: 70px;
+}
 
+.characterTitle {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 70px;
 }
 
 .characterImage {
-    height: auto;
-    z-index:3;
+    z-index: 3;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
-    width: 100%;
     object-fit: contain;
-    
+    height: auto;
+
 }
+
+
+
+
+

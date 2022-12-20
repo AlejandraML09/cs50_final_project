@@ -12,7 +12,7 @@ const characterSchema = new mongoose.Schema({});
 const getCharacters = async () => {    
     const character = mongoose.model('characters', characterSchema, 'characters')
     const data = await character.find();
-    console.warn(data);
+    // console.warn(data);
     return data
 }
 
