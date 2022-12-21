@@ -14,6 +14,8 @@ const CharacterList = ({ setSelectedCharacter }) => {
         console.log('hola hiciste click en', character.name)
     }
 
+
+
     return (
         <div className={styles.characterListVerticalScroll}>
             {importantCharacterList.map((character) => {
@@ -21,9 +23,8 @@ const CharacterList = ({ setSelectedCharacter }) => {
                 console.log(character.image)
                 return (
                     <div className={styles.buttonContainer}>
-
-                        <button onClick={() => selectCharacter(character)} className={styles.characterButton}>{(character.name)}
-                            <img src={character.image} className={styles.houseImage} />
+                        <button onClick={() => selectCharacter(character)} style={{ backgroundImage: `url('${character.image}')` }}
+                        className={styles.characterButton}>{(character.name)}
                         </button>
 
 

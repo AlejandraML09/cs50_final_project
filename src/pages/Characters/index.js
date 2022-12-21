@@ -23,6 +23,8 @@ const Characters = () => {
 
     const [selectedCharacter, setSelectedCharacter] = useState({})
 
+
+
     return (
         <div className={styles.charactersPageContainer}>
             <div className={styles.charactersListContainer}>
