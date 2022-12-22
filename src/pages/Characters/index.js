@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 import styles from './style.module.css';
-import daenerysTargaryen from '../../assets/images/daenerys.png'
 import CharacterList from "../../components/CharacterList";
 import { listCharactersGOT } from "../../services/apiClient";
 
