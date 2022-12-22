@@ -10,22 +10,14 @@ p {
 
 .charactersPageContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     min-height: 100vh;
     background-image: url("../../assets/images/targaryen_background.jpg");
     width: 100%;
+     background-attachment: fixed;
 
-}
 
-.charactersListContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 70px;
-    overflow: hidden;
-    min-width: 250px;
-    height: 93.5vh;
 }
 
 
@@ -33,10 +25,13 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 80px;
-    margin-left: 30px;
+    flex-wrap:wrap;
     width:100%;
 
+}
+
+.characterHorizontalScrollContainer {
+    margin-top:80px;
 }
 
 .characterTextContainer {
@@ -44,8 +39,11 @@ p {
     flex-direction:column;
     justify-content: center;
     width:100%;
+    min-width:55%;
     float:right;
     height:auto;
+    flex:1;
+    padding:40px;
 }
 
 .characterDescription {
@@ -55,13 +53,14 @@ p {
 
 
 }
-
 .characterImageContainer {
     display:flex;
     flex-direction:column;
     justify-content: flex-end;
-    width:100%;
+    flex:1;
+    height:auto;
 }
+
 
 .characterImage {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
@@ -86,9 +85,3 @@ p {
 }
 
 
-
-@media (max-width: 1199.98px) {
-    .charactersListContainer {
-        display: none;
-    }
-}

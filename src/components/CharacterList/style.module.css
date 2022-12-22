@@ -1,57 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
-
 h1,
-p, button {
+p,
+button {
     font-family: "Montserrat", sans-serif;
 }
 
 .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width:25%;
+    display:inline;
+
+
+}
+
+
+.characterListHorizontalScroll {
+    white-space: nowrap;
     position: relative;
- 
+    overflow-x:scroll;
+    overflow-y:hidden;
+    background-image: linear-gradient(
+        to right,
+        rgba(151, 151, 151, 0.26),
+        rgba(255, 255, 255, 0)
+    );
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb:horizontal
+{
+    background-image: url('../../assets/images/long_claw.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:300px 30px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.205);
+   
 }
 
 .characterButton {
     padding: 40px;
     background-color: transparent;
-    width: 100%;
     color: white;
     border-color: white;
     border: 0px;
     border-bottom: 3px solid;
-    position:relative;
-    z-index:3;
+    float: none;
+    z-index: 3;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
     text-transform: uppercase;
-
+    display: inline-block;
 }
 
-.characterListVerticalScroll {
-    overflow-y: scroll;
-    background-image: linear-gradient(to right, rgba(151, 151, 151, 0.26), rgba(255,255,255,0));
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
-}
-::-webkit-scrollbar {
-    width: 12px;
-}
 
-::-webkit-scrollbar-track {
-    display: none;
-}
 
-/* 
-.houseImage {
-    opacity: 0.5;
-    height:100px;
-    z-index:0;
-    
-    position:fixed;
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
- } */
 

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import listCharactersGOT from '../../services/api'
 import styles from './style.module.css';
 const CharacterList = ({ setSelectedCharacter, importantCharacterList }) => {
 
@@ -8,20 +7,22 @@ const CharacterList = ({ setSelectedCharacter, importantCharacterList }) => {
         console.log('hola hiciste click en', character.name)
     }
 
+    const scrollLastElementIntoView = () => {
+        let lastElement = document.getElementById('lastCharacter')
+        lastElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
+    }
 
 
     return (
-        <div className={styles.characterListVerticalScroll}>
-            {importantCharacterList.map((character) => {
+        <div className={styles.characterListHorizontalScroll}>
+                   {importantCharacterList.map((character, index) => {
                 console.log('Imagen de ', character.name)
                 console.log(character.image)
                 return (
-                    <div className={styles.buttonContainer}>
+                    <div className={styles.buttonContainer} >
                         <button onClick={() => selectCharacter(character)} style={{ backgroundImage: `url('${character.image}')` }}
                             className={styles.characterButton}>{(character.name)}
                         </button>
-
-
                     </div>
                 )
             })}

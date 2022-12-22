@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Game of Thrones - Mini Wiki
+This page was an idea that I had recently because of the premiere of House of The Dragon. I was a big fan of Game of Thrones when it first aired, and seeing a prequel of my favorite show just made me remember those good old times (before last season at least) watching GOT at night while drinking "submarinos" (our local take on hot cocoa, a classic) at my old house, and sharing my thoughts about the show with my friends. So this is where the inspiration came from!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Video demo:
 
-## Available Scripts
+# Description:
 
-In the project directory, you can run:
+Hello! My name is Alejandra and Im from Argentina, Buenos Aires and this is my CS50 final project :)!. This project is comprised of a React App which pulls data from a node.js and an Express mini-API (I tried using some APIs that I found online but none had all the data that I needed for this project, so I ended up creating my own). This API fetches data from a MongoDB Atlas database. This in-house API serves three different endpoints: 
 
-### `npm start`
+-`GET /houses`: Fetches information for all the houses.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-`GET /houses/{houseId}`: Fetches information for a specific house by id.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-`GET /characters`: Fetches information for all the characters.
 
-### `npm test`
+# Frontend - React.js
+### `src/App.js`
+This file is the entry point to the React application, it contains just a `NavBar` and a `Router` for the other pages. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `src/assets/*`
+This folder only contains assets such as images, videos or fonts.
 
-### `npm run build`
+### `src/components/CharacterList`
+This folder contains a component which lists all the characters in a little menu with its respective image. It gets this information from another component (`src/pages/Characters/index.js`).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `src/components/NavBar`
+A simple navbar using Bootstrap, which has links to `/home`, `/characters` and `/houses`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `src/pages/Characters`
+This page includes the previously mentioned `CharacterList` component, and also shows further information about whichever character is selected from the `CharacterList`. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+It gets its information from the API by querying the `GET http://localhost:5000/characters`.
 
-### `npm run eject`
+### `src/pages/Home`
+This is just a landing page intended to entice the user to check out the page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `src/pages/Houses`
+This page introduces the user to the different Game of Thrones houses. It gets its information from the API by querying the `GET http://localhost:5000/houses`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `src/pages/HouseDetail`
+This page presents more information about the selected house. It knows which house to fetch based on the path param in the url.
+It gets its information from the API by querying the `GET http://localhost:5000/houses/{houseId}`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### `src/services/apiClient.js`
+A simple client to fetch data from the API.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Backend - Node.js and Express
+### `backend/index.js`
+This is the entry point to the API. Three routes are defined here, which will be used in the Frontend. It uses express to create a tiny server to listen to an HTTP request, and it also uses the Mongoose library to connect to the MongoDB database and fetch the data. 
 
-## Learn More
+### `backend/.env`
+This is a placeholder file for the environment variables. In this case I have just one, which is the database connection url, which for security reasons is not commited.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Implementation 
+For this website I encountered a few different challenges, starting off with the design. I had a lot of ideas in mind, but in reality, when I tried to implement them, I would usually run into issues down the line because I tend to overdesign. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This caused a bigger problem when it came down to responsiveness. I started adding different features over and over and then when I had to actually try them out in various resolutions it wouldn't look good at all and made me waste a lot of time and made me have to rethink my design approach. 
 
-### Code Splitting
+This experience taught me to plan ahead before jumping right into the implementation. I will definitely go for a mobile-first approach for my next projects. I also gained a lot of insight into how web applications communicate and transfer data, and some basic security features.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I hope you liked it! :D.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

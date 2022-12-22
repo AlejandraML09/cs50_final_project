@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import listCharactersGOT from '../../services/api'
 import styles from './style.module.css'
 
 import starkLogo from '../../assets/images/house_stark_logo.png'

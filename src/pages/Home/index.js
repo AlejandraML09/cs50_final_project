@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import listCharactersGOT from '../../services/api';
 import styles from './style.module.css';
 import gotLogoDesktop from '../../assets/images/game_of_thrones_logo.png'
 import gotLogoMobile from '../../assets/images/got_small_logo.png'

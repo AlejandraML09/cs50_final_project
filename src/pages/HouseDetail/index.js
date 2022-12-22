@@ -3,7 +3,7 @@ import {
     useParams
 } from "react-router-dom";
 
-import { getHouseById } from "../../services/api";
+import { getHouseById } from "../../services/apiClient";
 
 import styles from './style.module.css';
 
@@ -21,8 +21,23 @@ const HouseDetail = () => {
     }, []);
 
     return (
-        <div className={styles.houseContainer} style={{ backgroundImage: `url(${houseData.background_image})` }}>
-        <h1 className={styles.houseText}>{houseData.house}</h1>
+        <div className={styles.backgroundContainer} style={{ backgroundImage: `url(${houseData.background_image})` }}>
+            <div className={styles.houseContainer}>
+                <div className={styles.houseImagesContainer}>
+                    <img className={styles.houseSigil} src={houseData.sigilLeft} alt="House Stark Sigil" /></div>
+                <div className={styles.houseDescriptionContainer}>
+                    <h1 className={styles.houseText}>{houseData.house}</h1>
+                    <p className={styles.houseDescription}>
+                        {houseData.descriptionShort}
+                    </p>
+                    <p className={styles.houseDescription}>
+                        {houseData.description}
+                    </p>
+                </div>
+                <div className={styles.houseImagesContainer}>
+                    <img className={styles.houseSigil} src={houseData.sigilRight} alt="House Stark Sigil" /></div>
+            </div>
+
         </div>
 
     )

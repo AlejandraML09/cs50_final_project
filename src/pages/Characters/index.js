@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import styles from './style.module.css';
 import daenerysTargaryen from '../../assets/images/daenerys.png'
 import CharacterList from "../../components/CharacterList";
-import {listCharactersGOT} from "../../services/api";
+import { listCharactersGOT } from "../../services/apiClient";
 
 
 const Characters = () => {
@@ -23,9 +23,9 @@ const Characters = () => {
 
     return (
         <div className={styles.charactersPageContainer}>
-            <div className={styles.charactersListContainer}>
-                <CharacterList setSelectedCharacter={setSelectedCharacter} importantCharacterList={importantCharacterList} />
-            </div>
+                <div className={styles.characterHorizontalScrollContainer}>
+                    <CharacterList setSelectedCharacter={setSelectedCharacter} importantCharacterList={importantCharacterList} />
+                </div>
             <div className={styles.charactersInfoContainer}>
                 <div className={styles.characterTextContainer}>
                     <h1 className={styles.characterName}>{selectedCharacter.name}</h1>
@@ -33,7 +33,8 @@ const Characters = () => {
                     <p className={styles.characterDescription}>{selectedCharacter.description}</p>
                     <p className={styles.characterDescription}>{selectedCharacter.descriptionShort}</p>
                 </div>
-                <div className={styles.characterImageContainer}><img className={styles.characterImage} src={selectedCharacter.image} alt={selectedCharacter.name} />
+                <div className={styles.characterImageContainer}>
+                    <img className={styles.characterImage} src={selectedCharacter.image} alt={selectedCharacter.name} />
                 </div>
             </div>
 
