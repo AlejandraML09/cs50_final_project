@@ -29,10 +29,7 @@ const NavBar = () => {
                             <a class="nav-link" href="/characters">Characters</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disabled</a>
+                            <a class="nav-link" href="/houses">Houses</a>
                         </li>
                     </ul>
                 </div>

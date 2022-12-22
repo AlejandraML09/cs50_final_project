@@ -1,34 +1,23 @@
-import daenerysTargaryen from '../assets/images/daenerys.png'
-
-//const API_URL = 'https://www.anapioficeandfire.com/api'
 const API_URL = 'http://localhost:5000'
 
-
-// const importantCharactersIds = [
-//     { name: 'Daenerys Targaryen', id: 271, image: daenerysTargaryen},
-//     { name: 'Viserys Targaryen', id: 1079 },
-//     { name: 'Jon Snow', id: 583 },
-//     { name: 'Arya Stark', id: 148 },
-//     { name: 'Robb Stark', id: 1880 },
-//     { name: 'Catelyn Stark', id: 232 },
-//     { name: 'Eddard Stark', id: 339 },
-//     { name: 'Sansa Stark', id: 957 },
-//     { name: 'Rickon Stark', id: 891 },
-//     { name: 'Tyrion Lannister', id: 1052 },
-//     { name: 'Cersei Lannister', id: 238 },
-//     { name: 'Jaime Lannister', id: 529 },
-//     { name: 'Tywin Lannister', id: 27 },
-//     { name: 'Joffrey Baratheon', id: 565 },
-// ]
-
 const getImportantCharacters = () => fetch(`${API_URL}/characters`)
+const getImportantHouses = () => fetch(`${API_URL}/houses`)
+const getHouse = (id) => fetch(`${API_URL}/houses/${id}`)
 
-const listCharactersGOT = async () => {
+export const listCharactersGOT = async () => {
     let response = await getImportantCharacters()
     let dataAsJson = await response.json()
     return dataAsJson
 }
 
+export const listHousesGOT = async () => {
+    let response = await getImportantHouses()
+    let dataAsJson = await response.json()
+    return dataAsJson
+}
+export const getHouseById = async (id) => {
+    let response = await getHouse(id)
+    let dataAsJson = await response.json()
+    return dataAsJson
+}
 
-
-export default listCharactersGOT

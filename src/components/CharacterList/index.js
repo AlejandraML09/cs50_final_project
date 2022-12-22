@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from "react";
 import listCharactersGOT from '../../services/api'
 import styles from './style.module.css';
-const CharacterList = ({ setSelectedCharacter }) => {
-
-    useEffect(async () => {
-        setImportantCharacterList(await listCharactersGOT())
-    }, []);
-
-    const [importantCharacterList, setImportantCharacterList] = useState([])
+const CharacterList = ({ setSelectedCharacter, importantCharacterList }) => {
 
     function selectCharacter(character) {
         setSelectedCharacter(character)
@@ -24,7 +18,7 @@ const CharacterList = ({ setSelectedCharacter }) => {
                 return (
                     <div className={styles.buttonContainer}>
                         <button onClick={() => selectCharacter(character)} style={{ backgroundImage: `url('${character.image}')` }}
-                        className={styles.characterButton}>{(character.name)}
+                            className={styles.characterButton}>{(character.name)}
                         </button>
 
 

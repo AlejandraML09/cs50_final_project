@@ -6,7 +6,7 @@
     
 }
 .randomHouseLogo {
-    height:60px;
+    height:6vh;
     
 }
 
@@ -16,4 +16,5 @@
     background-color: transparent !important;
     z-index:9999;
     margin-bottom: 70px;
+
 }
