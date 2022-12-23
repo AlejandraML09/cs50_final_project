@@ -7,7 +7,14 @@ import westerosMap from '../../assets/images/westerosmap.jpg'
 import { Parallax, ParallaxLayer } from '@react-spring/web'
 import whiteArrow from '../../assets/images/white_arrow_down.png'
 
-const HomePage = () => {
+const HomePage = ({setIsLoading}) => {
+        setTimeout(
+            function () {
+                setIsLoading(false)
+            },
+            1000);
+
+
 
     const OptionBox = ({ image, text, link }) => {
         return (
@@ -28,8 +35,8 @@ const HomePage = () => {
                     <img class="img-fluid" className={styles.gotLogoDesktop} src={gotLogoDesktop} alt="" />
                     <img class="img-fluid" className={styles.gotLogoMobile} src={gotLogoMobile} alt="" />
                 </div>
-                <section  className={styles.whiteArrowContainer}>
-                    <a  className={styles.whiteArrowA}href="#section06"><span></span>
+                <section className={styles.whiteArrowContainer}>
+                    <a className={styles.whiteArrowA} href="#section06"><span></span>
                     </a>
                 </section>
             </div>

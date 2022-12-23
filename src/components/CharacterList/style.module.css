@@ -77,6 +77,12 @@ button {
     width: 12px;
 }
 
+::-webkit-scrollbar:vertical {
+    width: 12px;
+    display:none;
+}
+
+
 ::-webkit-scrollbar-thumb:horizontal {
     background-image: url("../../assets/images/long_claw.png");
     background-repeat: no-repeat;

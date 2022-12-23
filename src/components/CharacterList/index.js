@@ -7,12 +7,6 @@ const CharacterList = ({ setSelectedCharacter, importantCharacterList }) => {
         console.log('hola hiciste click en', character.name)
     }
 
-    const scrollLastElementIntoView = () => {
-        let lastElement = document.getElementById('lastCharacter')
-        lastElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
-    }
-
-
     return (
         <div className={styles.characterListHorizontalScroll}>
             {importantCharacterList.map((character, index) => {

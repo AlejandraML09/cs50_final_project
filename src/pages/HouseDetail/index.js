@@ -10,12 +10,13 @@ import styles from './style.module.css';
 
 
 
-const HouseDetail = () => {
+const HouseDetail = ({setIsLoading}) => {
     let { houseId } = useParams();
     const [houseData, setHouseData] = useState({})
 
     useEffect(async () => {
         const fetchedHouse = await getHouseById(houseId)
+        setIsLoading(false)
         setHouseData(fetchedHouse)
 
     }, []);

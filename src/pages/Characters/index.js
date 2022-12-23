@@ -3,17 +3,31 @@ import React, { useEffect, useState } from "react";
 import styles from './style.module.css';
 import CharacterList from "../../components/CharacterList";
 import { listCharactersGOT } from "../../services/apiClient";
+import lannisterBg from '../../assets/images/lannisterbg.png';
+import starkBg from '../../assets/images/starkbg.png';
+import targaryenBg from '../../assets/images/targaryenbg.png';
+import baratheonBg from '../../assets/images/baratheonbg.png'
 
-
-const Characters = () => {
+const Characters = ({setIsLoading}) => {
 
     useEffect(async () => {
         const importantCharacters = await listCharactersGOT()
         setImportantCharacterList(importantCharacters.sort((elem1, elem2) => elem1.order - elem2.order))
+        setIsLoading(false)
         setSelectedCharacter(importantCharacters[0])
     }, []);
 
     const [importantCharacterList, setImportantCharacterList] = useState([])
+
+    const housesBackgroundSelected = () => {
+        switch (selectedCharacter.house) {
+            case "House Targaryen": return targaryenBg
+            case "House Stark": return starkBg
+            case "House Baratheon": return baratheonBg
+            case "House Lannister": return lannisterBg
+            default: return starkBg
+        }
+    }
 
 
     const [selectedCharacter, setSelectedCharacter] = useState({})
@@ -21,7 +35,9 @@ const Characters = () => {
 
 
     return (
-        <div className={styles.charactersPageContainer}>
+        <div className={styles.charactersPageContainer}
+            style={{ backgroundImage: `url('${housesBackgroundSelected()}')` }}
+        >
             <div className={styles.characterHorizontalScrollContainer}>
                 <CharacterList setSelectedCharacter={setSelectedCharacter} importantCharacterList={importantCharacterList} />
             </div>

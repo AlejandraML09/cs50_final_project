@@ -4,9 +4,10 @@ import westerosMap from '../../assets/images/westerosmap.jpg'
 import { listHousesGOT } from "../../services/apiClient";
 import gotIntro from '../../assets/video/gotIntro.mp4';
 
-const HousesPage = () => {
+const HousesPage = ({setIsLoading}) => {
     useEffect(async () => {
         const importantHouses = await listHousesGOT()
+        setIsLoading(false)
         setSelectedHouse(importantHouses)
     }, []);
 
