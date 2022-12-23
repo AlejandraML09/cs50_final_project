@@ -8,7 +8,7 @@ import starkBg from '../../assets/images/starkbg.png';
 import targaryenBg from '../../assets/images/targaryenbg.png';
 import baratheonBg from '../../assets/images/baratheonbg.png'
 
-const Characters = ({setIsLoading}) => {
+const Characters = ({ setIsLoading }) => {
 
     useEffect(async () => {
         const importantCharacters = await listCharactersGOT()
@@ -48,9 +48,7 @@ const Characters = ({setIsLoading}) => {
                     <p className={styles.characterDescription}>{selectedCharacter.description}</p>
                     <p className={styles.characterDescription}>{selectedCharacter.descriptionShort}</p>
                 </div>
-                <div className={styles.characterImageContainer}>
-                    <img className={styles.characterImage} src={selectedCharacter.image} alt={selectedCharacter.name} />
-                </div>
+                <img className={styles.characterImage} src={selectedCharacter.image} alt={selectedCharacter.name} />
             </div>
 
 

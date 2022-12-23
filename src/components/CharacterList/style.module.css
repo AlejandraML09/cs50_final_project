@@ -9,7 +9,7 @@ button {
 
 .buttonContainer {
     flex-wrap: nowrap;
-    width: 25%;
+    flex-grow:1;
     display: flex;
 }
 
@@ -17,7 +17,7 @@ button {
 
 .buttonBackground {
     flex-wrap: nowrap;
-    width: 25%;
+    flex:1;
     display:flex;
 }
 
