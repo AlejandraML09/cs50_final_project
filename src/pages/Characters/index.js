@@ -9,7 +9,7 @@ const Characters = () => {
 
     useEffect(async () => {
         const importantCharacters = await listCharactersGOT()
-        setImportantCharacterList(importantCharacters)
+        setImportantCharacterList(importantCharacters.sort((elem1, elem2) => elem1.order - elem2.order))
         setSelectedCharacter(importantCharacters[0])
     }, []);
 
@@ -22,9 +22,9 @@ const Characters = () => {
 
     return (
         <div className={styles.charactersPageContainer}>
-                <div className={styles.characterHorizontalScrollContainer}>
-                    <CharacterList setSelectedCharacter={setSelectedCharacter} importantCharacterList={importantCharacterList} />
-                </div>
+            <div className={styles.characterHorizontalScrollContainer}>
+                <CharacterList setSelectedCharacter={setSelectedCharacter} importantCharacterList={importantCharacterList} />
+            </div>
             <div className={styles.charactersInfoContainer}>
                 <div className={styles.characterTextContainer}>
                     <h1 className={styles.characterName}>{selectedCharacter.name}</h1>

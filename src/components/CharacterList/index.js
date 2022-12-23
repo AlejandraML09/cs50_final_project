@@ -15,15 +15,17 @@ const CharacterList = ({ setSelectedCharacter, importantCharacterList }) => {
 
     return (
         <div className={styles.characterListHorizontalScroll}>
-                   {importantCharacterList.map((character, index) => {
+            {importantCharacterList.map((character, index) => {
                 console.log('Imagen de ', character.name)
                 console.log(character.image)
                 return (
-                    <div className={styles.buttonContainer} >
-                        <button onClick={() => selectCharacter(character)} style={{ backgroundImage: `url('${character.image}')` }}
-                            className={styles.characterButton}>{(character.name)}
+                    <div className={`${styles.buttonBackground} ${styles.buttonContainer}`} style={{ backgroundImage: `url('${character.image}')` }} >
+                        <button onClick={() => selectCharacter(character)}
+                            className={styles.characterButton}>
+                            <h1 className={styles.characterName}>{(character.name)}</h1>
                         </button>
                     </div>
+
                 )
             })}
         </div>

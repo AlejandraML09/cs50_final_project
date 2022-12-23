@@ -15,6 +15,7 @@ const getCharacters = async () => {
     const data = await character.find();
     // console.warn(data);
     return data
+    
 }
 
 
