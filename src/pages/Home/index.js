@@ -6,13 +6,14 @@ import eddardStark from '../../assets/images/eddardstark.jpg'
 import westerosMap from '../../assets/images/westerosmap.jpg'
 import { Parallax, ParallaxLayer } from '@react-spring/web'
 import whiteArrow from '../../assets/images/white_arrow_down.png'
+import backgroundVideo from '../../assets/video/ice_dragon.mp4'
 
-const HomePage = ({setIsLoading}) => {
-        setTimeout(
-            function () {
-                setIsLoading(false)
-            },
-            1000);
+const HomePage = ({ setIsLoading }) => {
+    setTimeout(
+        function () {
+            setIsLoading(false)
+        },
+        1000);
 
 
 
@@ -32,18 +33,20 @@ const HomePage = ({setIsLoading}) => {
         <div>
             <div className={styles.homeBackground}>
                 <div className={styles.gotLogoContainer}>
-                    <img class="img-fluid" className={styles.gotLogoDesktop} src={gotLogoDesktop} alt="" />
-                    <img class="img-fluid" className={styles.gotLogoMobile} src={gotLogoMobile} alt="" />
+                    <img className={styles.gotLogoDesktop} src={gotLogoDesktop} alt="" />
+                    <img className={styles.gotLogoMobile} src={gotLogoMobile} alt="" />
                 </div>
+                <video className={styles.homeBackground} autoPlay loop muted>
+                    <source src={backgroundVideo} type='video/mp4' />
+                </video>
+
                 <section className={styles.whiteArrowContainer}>
                     <a className={styles.whiteArrowA} href="#section06"><span></span>
                     </a>
                 </section>
             </div>
             <div className={styles.titleContainer}>
-                <div className={styles.optionBackground}>
-                    <h1 id="section06" className={styles.title}>When you play the game of thrones, you win or you die. </h1>
-                    <h1 className={styles.title}>Who will sit on the Iron Throne in the end? </h1>
+                <div id="section06" className={styles.optionBackground}>
                     <div className={styles.optionBoxesContainer}>
                         <OptionBox image={eddardStark} text='Characters' link='/characters' />
                         <OptionBox image={westerosMap} text='Houses' link='/houses' />

@@ -1,22 +1,26 @@
 .homeBackground {
-    background-image: url("../../assets/images/1260061.jpg");
     width: 100%;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: black;
 }
 
 .gotLogoContainer {
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 12em;
-    height: 500px;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 
 .gotLogoDesktop {
     display: block;
+    max-width: 800px;
+    height:fit-content;
 }
 
 .gotLogoMobile {
@@ -30,7 +34,7 @@
 }
 
 .optionBackground {
-    background-image: url("../../assets/images/wallpaperflare.com_wallpaper.jpg");
+    background-image: url("../../assets/images/1260061.jpg");
     width: 100%;
     min-height: 100vh;
     background-size: cover;
@@ -58,7 +62,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 4em;
+    margin-top: 10em;
     flex-wrap: wrap;
 }
 .optionBox {
@@ -194,6 +198,8 @@ a {
 @media screen and (max-width: 800px) {
     .gotLogoMobile {
         display: block;
+        
+
     }
     .gotLogoDesktop {
         display: none;
