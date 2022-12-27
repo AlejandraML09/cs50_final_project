@@ -1,20 +1,41 @@
 .randomHouseLogoContainer {
-    display:flex;
+    display: flex;
     flex-direction: row;
     padding-right: 35px;
-    padding-left: 35px;
-    
+
 }
 .randomHouseLogo {
-    height:6vh;
-    
+    height: 6vh;
+    padding-left: 35px;
 }
 
 .header {
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
     background-color: transparent !important;
-    z-index:9999;
-    margin-bottom: 70px;
+    z-index: 9999;
+}
 
+.containerFluid {
+    display:flex;
+    flex-wrap:wrap;
+    padding-left: 0;
+}
+
+@media (max-width: 992px) {
+    .navBarTextToggler {
+        display: none;
+        flex-basis:100%;
+        justify-content: center;
+        background-color: #42403D;
+        margin-top:15px;
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .navBarTextToggler {
+        display: block !important;
+    }
 }

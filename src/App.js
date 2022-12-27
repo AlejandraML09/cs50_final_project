@@ -11,8 +11,11 @@ import NavBar from "./components/NavBar";
 import HousesPage from "./pages/Houses";
 import HouseDetail from "./pages/HouseDetail";
 import LoadingScreen from "./components/LoadingScreen";
-import './App.css'
-import './assets/fonts/font.css'
+import './App.css';
+import './assets/fonts/font.css';
+import 'jquery/dist/jquery.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
 
