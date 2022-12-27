@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styles from './style.module.css'
 
-import starkLogo from '../../assets/images/house_stark_logo.png'
-import lannisterLogo from '../../assets/images/house_lannister_logo.png'
-import targaryenLogo from '../../assets/images/house_targaryen_logo.png'
+import starkLogo from '../../assets/images/house_stark_logo_250x.png'
+import lannisterLogo from '../../assets/images/house_lannister_logo_250x.png'
+import targaryenLogo from '../../assets/images/house_targaryen_logo_250x.png'
 const NavBar = () => {
 
 

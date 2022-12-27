@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from './style.module.css';
 import gotLogoDesktop from '../../assets/images/game_of_thrones_logo.png'
 import gotLogoMobile from '../../assets/images/got_small_logo.png'
 import eddardStark from '../../assets/images/eddardstark.jpg'
 import westerosMap from '../../assets/images/westerosmap.jpg'
-import { Parallax, ParallaxLayer } from '@react-spring/web'
-import whiteArrow from '../../assets/images/white_arrow_down.png'
 import backgroundVideo from '../../assets/video/ice_dragon.mp4'
 
 const HomePage = ({ setIsLoading }) => {

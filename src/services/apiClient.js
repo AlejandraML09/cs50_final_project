@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000'
+const API_URL = process.env.REACT_APP_API_URL
 
 const getImportantCharacters = () => fetch(`${API_URL}/characters`)
 const getImportantHouses = () => fetch(`${API_URL}/houses`)
