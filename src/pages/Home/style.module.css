@@ -20,7 +20,7 @@
 .gotLogoDesktop {
     display: block;
     max-width: 800px;
-    height:fit-content;
+    height: fit-content;
 }
 
 .gotLogoMobile {
@@ -91,7 +91,6 @@ a {
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    min-width: 600px;
     transition: transform 0.5s;
     display: flex;
 }
@@ -120,7 +119,6 @@ a {
     cursor: pointer;
     position: relative;
     white-space: nowrap;
-
 }
 
 .link span {
@@ -198,11 +196,17 @@ a {
 @media screen and (max-width: 800px) {
     .gotLogoMobile {
         display: block;
-        
-
     }
     .gotLogoDesktop {
         display: none;
+    }
+}
+@media (max-width: 570px) {
+    .optionBox {
+        min-height: 250px;
+    }
+    .linkElara span  {
+        font-size: 2.5rem;
     }
 }
 
@@ -210,7 +214,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
 }
 
 .whiteArrowContainer a span {
@@ -219,12 +222,12 @@ a {
     margin-right: auto;
     left: 0;
     right: 0;
-    bottom:0;
-    margin-bottom:80px;
+    bottom: 0;
+    margin-bottom: 80px;
     width: 80px;
     height: 80px;
     border-left: 3px solid #fff;
-    border-bottom:3px solid #fff;
+    border-bottom: 3px solid #fff;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-animation: sdb05 1.5s infinite;
