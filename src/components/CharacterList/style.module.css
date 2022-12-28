@@ -84,7 +84,6 @@ button {
 
 
 ::-webkit-scrollbar-thumb:horizontal {
-    background-image: url("../../assets/images/long_claw.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 300px 30px;
