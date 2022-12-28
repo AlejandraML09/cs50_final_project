@@ -5,7 +5,7 @@
 
 }
 .randomHouseLogo {
-    height: 6vh;
+    max-height: 60px;
     padding-left: 35px;
 }
 
@@ -19,8 +19,14 @@
 .containerFluid {
     display:flex;
     flex-wrap:wrap;
-    padding-left: 0;
+    padding-left: 10px;
 }
+
+li {
+    font-size: 2em;
+    color:white
+}
+
 
 @media (max-width: 992px) {
     .navBarTextToggler {

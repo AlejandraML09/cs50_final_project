@@ -51,11 +51,12 @@
     color: #f1f1f1;
     letter-spacing: 2px;
     font-size: 60px;
+    text-decoration: none;
 }
 
 a {
     color: inherit;
-    text-decoration: inherit;
+    text-decoration: none;
 }
 
 .optionBoxesContainer {
@@ -117,10 +118,9 @@ a {
 
 .link {
     cursor: pointer;
-
     position: relative;
     white-space: nowrap;
-    color: var(--color-text);
+
 }
 
 .link span {

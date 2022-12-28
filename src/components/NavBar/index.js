@@ -7,21 +7,23 @@ import targaryenLogo from '../../assets/images/house_targaryen_logo_250x.png'
 const NavBar = () => {
 
 
-    const housesLogo = [starkLogo, lannisterLogo, targaryenLogo]
+    // const housesLogo = [starkLogo, lannisterLogo, targaryenLogo]
 
-    const randomHouse = housesLogo[Math.floor(Math.random() * housesLogo.length)]
+    // const randomHouse = housesLogo[Math.floor(Math.random() * housesLogo.length)]
 
     const [showNavBarToggler, setShowNavBarToggler] = useState(false);
 
     return (
         <header className={styles.header}>
+        
             <nav class="navbar navbar-expand-lg navbar-dark">
+        
                 <div className={styles.containerFluid} >
-                    <div class="navbar-brand" className={styles.randomHouseLogoContainer}><img src={randomHouse} alt="" className={styles.randomHouseLogo} /></div>
+
                     <button onClick={() => setShowNavBarToggler(!showNavBarToggler)} class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div className={styles.navBarTextToggler} style={{display: showNavBarToggler ? "flex" : "none"}}  id="navbarNav">
+                    <div className={styles.navBarTextToggler} style={{ display: showNavBarToggler ? "flex" : "none" }} id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
                                 <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
@@ -36,6 +38,7 @@ const NavBar = () => {
                     </div>
                 </div>
             </nav>
+
         </header>
     )
 
