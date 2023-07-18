@@ -1,9 +1,6 @@
 # Game of Thrones - Mini Wiki
 This page was an idea that I had recently because of the premiere of House of The Dragon. I was a big fan of Game of Thrones when it first aired, and seeing a prequel of my favorite show just made me remember those good old times (before last season at least) watching GOT at night while drinking "submarinos" (our local take on hot cocoa, a classic) at my old house, and sharing my thoughts about the show with my friends. So this is where the inspiration came from!
 
-# Video demo:
-https://www.youtube.com/watch?v=WelX3A0bbF0
-
 # Web Link:
 http://cs50.ygmasoft.com/
 
